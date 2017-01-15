@@ -22,7 +22,7 @@ export default {
   margin: 0 auto;
   max-width: 700px;
   font-size: 28px;
-  height: 400px;
+  height: auto;
   background-color: $white;
 
   h3 {

@@ -1,7 +1,7 @@
 <template>
   <div class="content-container">
     <h3>Things I've worked on.</h3>
-    <p></p>
+    <p>Stuff</p>
   </div>
 </template>
 
@@ -22,8 +22,9 @@ export default {
   margin: 0 auto;
   max-width: 700px;
   font-size: 28px;
-  height: 400px;
+  height: auto;
   background-color: $white;
+  padding-bottom: 60px;
 
   h3 {
     color: $primary;
