@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <Navbar></Navbar>
+    <Home></Home>
+    <Footernav></Footernav>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Home from './pages/Home'
+import Navbar from './components/Navbar'
+import Footernav from './components/Footer'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Home,
+    Navbar,
+    Footernav
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  margin: 0;
 }
 </style>
