@@ -1,0 +1,55 @@
+@mixin container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin link {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  color: $primary;
+  &:hover {
+      opacity: 0.5;
+  }
+}
+
+@mixin vertical-align($position: -50%) {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY($position);
+  -ms-transform: translateY($position);
+  transform: translateY($position);
+}
+
+@mixin user-select {
+  -webkit-user-select: none;  // Chrome all / Safari all
+  -moz-user-select: none;     // Firefox all
+  -ms-user-select: none;      // IE 10+
+  user-select: none;          // Likely future
+}
+
+@mixin generic-transition {
+  -moz-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &::-moz-placeholder {@content}
+  &::-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+}
