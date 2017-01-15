@@ -1,0 +1,39 @@
+<template>
+  <div class="content-container">
+    <h3>A little bit about me.</h3>
+    <p>I'm a DevOps Engineer / Enthusiast based in New York City. I like to automate things and create web applications.</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'About',
+  data () {
+    return {}
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang='scss' scoped>
+@import '../scss/imports';
+
+.content-container {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 28px;
+  height: 400px;
+  background-color: $white;
+
+  h3 {
+    color: $primary;
+  }
+
+  p {
+    width: 475px;
+    margin: 0 auto;
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+}
+</style>
