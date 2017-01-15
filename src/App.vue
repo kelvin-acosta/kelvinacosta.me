@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <Navbar></Navbar>
     <Home></Home>
     <Footernav></Footernav>
@@ -22,7 +21,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 #app {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-style: normal;
